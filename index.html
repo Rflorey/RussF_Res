@@ -3,90 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Russ Florey, P.E. - Senior Principal Mechanical Structural Analysis Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Russ Florey, P.E. - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
-        <h1>Russ Florey, P.E.</h1>
-        <div class="contact-info">
-            <p>832-727-4675 | russflorey@gmail.com</p>
-        </div>
-        <h2>SENIOR PRINCIPAL MECHANICAL STRUCTURAL ANALYSIS ENGINEER</h2>
-    </header>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+        function Resume() {
+            return (
+                <div className="bg-gray-100 min-h-screen p-4 md:p-8">
+                    <!-- Previous React component content -->
+                </div>
+            );
+        }
 
-    <section class="summary">
-        <p>High-Achieving Mechanical Structural Analysis Engineer with demonstrated success combining traditional engineering with modern computational methods for major clients and Fortune 500 companies in the heavy equipment, military, oil and gas, aerospace, and renewable industries.</p>
-    </section>
-
-    <section class="technical-skills">
-        <h3>TECHNICAL SKILLS</h3>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h4>Engineering Software</h4>
-                <p>Abaqus, Ansys, MSC ADAMs, AutoCAD, SolidWorks</p>
-            </div>
-            <div class="skill-category">
-                <h4>Programming</h4>
-                <p>Python, VB.NET, Excel Programming VBA, NumPy, Pandas</p>
-            </div>
-            <div class="skill-category">
-                <h4>Tools & Technologies</h4>
-                <p>MathCAD, Visual Studio, Machine Learning, AI</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="experience">
-        <h3>PROFESSIONAL EXPERIENCE</h3>
-        <div class="job">
-            <h4>ARRAY TECHNOLOGY, Chandler, AZ (2020 - Present)</h4>
-            <h5>Principal Mechanical Structural Engineer (1/2024 - Present)</h5>
-            <p>Promoted to apply advanced algorithm development/digital transformation capabilities and technical expertise in structural analysis.</p>
-            <ul>
-                <li>Developed AATLAS (Array's Advanced Tracker Loads Analysis System)</li>
-                <li>Created Python-based algorithms for solar tracker systems</li>
-                <li>Reduced design cycle time from days to hours</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="patents">
-        <h3>PATENTS</h3>
-        <ul>
-            <li>Anti-Tracking Spear Points for Earth-Boring Drill Bits (US8579051B2)</li>
-            <li>Erosion-Resistant Fluid Passageways and Flow Tubes for Earth-Boring Tools (US7828089B2)</li>
-        </ul>
-    </section>
-
-    <section class="certifications">
-        <h3>PROFESSIONAL CERTIFICATIONS</h3>
-        <ul>
-            <li>Pilot License: Airplane Single-Engine & Multi-Engine Instrument Rating</li>
-            <li>Registered Professional Engineer: Texas, Louisiana, Washington, Oregon, Alaska (Mechanical)</li>
-            <li>Registered Professional Engineer: Oklahoma (Mechanical & Structural)</li>
-        </ul>
-    </section>
-
-    <section class="education">
-        <h3>EDUCATION</h3>
-        <ul>
-            <li>Bachelor of Science, Mechanical Engineering - UNIVERSITY OF TEXAS AT TYLER (2000)</li>
-            <li>Master of Science, Data Science (In progress) – EASTERN UNIVERSITY</li>
-            <li>Certificate in Machine Learning & AI Micro Boot Camp – ARIZONA STATE UNIVERSITY (2023)</li>
-        </ul>
-    </section>
-
-    <section class="recommendation">
-        <h3>RECOMMENDATION</h3>
-        <blockquote>
-            "I highly recommend Russ for any position requiring expertise in mechanical/structural engineering analysis, software development, or technical leadership. His innovative thinking, technical excellence, and collaborative approach would make him an asset to any organization."
-            <footer>– Mudasar Zahoor, PhD, Sr. Research Engineer/ Technical Lead, Array Technologies, Inc.</footer>
-        </blockquote>
-    </section>
-
-    <footer class="page-footer">
-        <p>GitHub: <a href="https://github.com/Rflorey/Machine_Learning">https://github.com/Rflorey/Machine_Learning</a></p>
-    </footer>
+        ReactDOM.render(<Resume />, document.getElementById('root'));
+    </script>
 </body>
 </html>
