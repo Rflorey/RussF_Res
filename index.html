@@ -3,24 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Russ Florey, P.E. - Resume</title>
+    <title>Russ Florey, P.E. - Professional Resume</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body>
-    <div id="root"></div>
-    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script type="text/babel">
-        function Resume() {
-            return (
-                <div className="bg-gray-100 min-h-screen p-4 md:p-8">
-                    <!-- Previous React component content -->
-                </div>
-            );
-        }
+<body class="bg-gray-100 min-h-screen p-4 md:p-8">
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <header class="bg-white rounded-lg shadow-md p-8 text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800">Russ Florey, P.E.</h1>
+            <div class="mt-2 text-gray-600">
+                <p>832-727-4675 | russflorey@gmail.com</p>
+            </div>
+            <h2 class="mt-4 text-xl md:text-2xl text-gray-700">SENIOR PRINCIPAL MECHANICAL STRUCTURAL ANALYSIS ENGINEER</h2>
+        </header>
 
-        ReactDOM.render(<Resume />, document.getElementById('root'));
-    </script>
+        <!-- Summary -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <p class="text-gray-700">High-Achieving Mechanical Structural Analysis Engineer with demonstrated success combining traditional engineering with modern computational methods for major clients and Fortune 500 companies in the heavy equipment, military, oil and gas, aerospace, and renewable industries.</p>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h3 class="text-xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4">TECHNICAL SKILLS</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-gray-700 mb-2">Engineering Software</h4>
+                    <p class="text-gray-600">Abaqus, Ansys, MSC ADAMs, AutoCAD, SolidWorks</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-gray-700 mb-2">Programming</h4>
+                    <p class="text-gray-600">Python, VB.NET, Excel Programming VBA, NumPy, Pandas</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-gray-700 mb-2">Tools & Technologies</h4>
+                    <p class="text-gray-600">MathCAD, Visual Studio, Machine Learning, AI</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h3 class="text-xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4">PROFESSIONAL EXPERIENCE</h3>
+            <div class="mb-6">
+                <h4 class="text-lg font-bold text-gray-700">ARRAY TECHNOLOGY, Chandler, AZ (2020 - Present)</h4>
+                <h5 class="text-gray-600 font-semibold mt-2">Principal Mechanical Structural Engineer (1/2024 - Present)</h5>
+                <p class="text-gray-700 mt-2">Promoted to apply advanced algorithm development/digital transformation capabilities and technical expertise in structural analysis.</p>
+                <ul class="list-disc ml-6 mt-2 text-gray-700">
+                    <li>Developed AATLAS (Array's Advanced Tracker Loads Analysis System)</li>
+                    <li>Created Python-based algorithms for solar tracker systems</li>
+                    <li>Reduced design cycle time from days to hours</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Patents -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h3 class="text-xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4">PATENTS</h3>
+            <ul class="list-disc ml-6 text-gray-700">
+                <li>Anti-Tracking Spear Points for Earth-Boring Drill Bits (US8579051B2)</li>
+                <li>Erosion-Resistant Fluid Passageways and Flow Tubes for Earth-Boring Tools (US7828089B2)</li>
+            </ul>
+        </section>
+
+        <!-- Certifications -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h3 class="text-xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4">PROFESSIONAL CERTIFICATIONS</h3>
+            <ul class="list-disc ml-6 text-gray-700">
+                <li>Pilot License: Airplane Single-Engine & Multi-Engine Instrument Rating</li>
+                <li>Registered Professional Engineer: Texas, Louisiana, Washington, Oregon, Alaska (Mechanical)</li>
+                <li>Registered Professional Engineer: Oklahoma (Mechanical & Structural)</li>
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h3 class="text-xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4">EDUCATION</h3>
+            <ul class="list-disc ml-6 text-gray-700">
+                <li>Bachelor of Science, Mechanical Engineering - UNIVERSITY OF TEXAS AT TYLER (2000)</li>
+                <li>Master of Science, Data Science (In progress) – EASTERN UNIVERSITY</li>
+                <li>Certificate in Machine Learning & AI Micro Boot Camp – ARIZONA STATE UNIVERSITY (2023)</li>
+            </ul>
+        </section>
+
+        <!-- Recommendation -->
+        <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h3 class="text-xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4">RECOMMENDATION</h3>
+            <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-700">
+                "I highly recommend Russ for any position requiring expertise in mechanical/structural engineering analysis, software development, or technical leadership. His innovative thinking, technical excellence, and collaborative approach would make him an asset to any organization."
+                <footer class="mt-2 text-gray-600 not-italic">– Mudasar Zahoor, PhD, Sr. Research Engineer/ Technical Lead, Array Technologies, Inc.</footer>
+            </blockquote>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-white rounded-lg shadow-md p-6 text-center">
+            <p class="text-gray-700">
+                GitHub: 
+                <a href="https://github.com/Rflorey/Machine_Learning" class="text-blue-500 hover:text-blue-700">
+                    https://github.com/Rflorey/Machine_Learning
+                </a>
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
