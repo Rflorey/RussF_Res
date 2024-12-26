@@ -1,7 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Sun, Moon, Github, Linkedin, Mail, Download, Award, Book, Briefcase, Code2, GraduationCap, ScrollText } from 'lucide-react';
 
 const ProfessionalWebsite = () => {
+  const handleDownloadResume = () => {
+    window.location.href = '/Russ_Florey_Resume.pdf';
+  };
+
+  const handleNavigation = (path) => {
+    window.location.href = `/${path}`;
+  };
+
   return (
     <div className="container mx-auto px-4 py-8">
       <header className="text-center mb-12">
@@ -15,7 +24,7 @@ const ProfessionalWebsite = () => {
           </button>
           <button
             className="flex items-center gap-2 px-4 py-2 border rounded-md hover:bg-gray-100"
-            onClick={() => window.open('/resume.pdf')}
+            onClick={handleDownloadResume}
           >
             <Download className="h-4 w-4" /> Download Resume
           </button>
@@ -61,19 +70,21 @@ const ProfessionalWebsite = () => {
       <div className="flex justify-center gap-4 mb-8">
         <button
           className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
-          onClick={() => {
-            // Handle experience section navigation
-          }}
+          onClick={() => handleNavigation('experience')}
         >
           <GraduationCap className="h-4 w-4" /> Experience
         </button>
         <button
           className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
-          onClick={() => {
-            // Handle projects section navigation
-          }}
+          onClick={() => handleNavigation('projects')}
         >
           <Code2 className="h-4 w-4" /> Projects
+        </button>
+        <button
+          className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+          onClick={() => handleNavigation('education')}
+        >
+          <Book className="h-4 w-4" /> Education
         </button>
       </div>
 
