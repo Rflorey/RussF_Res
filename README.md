@@ -1,52 +1,37 @@
-# Russ Florey's Professional Resume Website
+# Russ Florey Professional Portfolio
 
-This repository contains the source code for Russ Florey's professional resume website. The site showcases his experience as a Senior Principal Mechanical Structural Analysis Engineer and highlights his expertise in combining traditional engineering with modern computational methods.
+Modern React-based professional portfolio website showcasing skills, experience, and achievements.
 
 ## Features
 
-- Responsive design that works on desktop and mobile devices
-- Clean, modern layout with intuitive navigation
-- Comprehensive sections including:
-  - Professional Experience
-  - Technical Skills
-  - Patents
-  - Professional Certifications
-  - Education
-  - Professional Recommendations
-
-## Technologies Used
-
-- HTML5
-- CSS3 with responsive design
-- Modern flexbox and grid layouts
-- Mobile-first approach
+- Modern React components
+- Dark/light mode toggle
+- Responsive design
+- Interactive sections
+- Professional styling with Tailwind CSS
 
 ## Local Development
 
-To run this site locally:
-
-1. Clone the repository:
 ```bash
-git clone https://github.com/Rflorey/RussF_Res.git
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
 ```
 
-2. Open `index.html` in your preferred web browser
+## Technologies Used
 
-## Contributing
+- React
+- Tailwind CSS
+- Vite
+- Lucide Icons
 
-If you find any issues or have suggestions for improvements:
+## Deployment
 
-1. Create a new branch
-2. Make your changes
-3. Submit a pull request
+The site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
 
-## Contact
-
-For any questions or inquiries, please contact:
-- Email: russflorey@gmail.com
-- Phone: 832-727-4675
-- GitHub: [https://github.com/Rflorey/Machine_Learning](https://github.com/Rflorey/Machine_Learning)
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+Visit the live site at: https://rflorey.github.io/RussF_Res/
