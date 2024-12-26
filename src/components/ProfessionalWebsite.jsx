@@ -1,10 +1,9 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Sun, Moon, Github, Linkedin, Mail, Download, Award, Book, Briefcase, Code2, GraduationCap, ScrollText } from 'lucide-react';
 
 const ProfessionalWebsite = () => {
   const handleDownloadResume = () => {
-    window.location.href = '/Russ_Florey_Resume.pdf';
+    window.location.href = '/resume.pdf';
   };
 
   const handleNavigation = (path) => {
