@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sun, Moon, Github, Linkedin, Mail, Download, Award, Book, Briefcase, CodeSquare, GraduationCap, ScrollText } from 'lucide-react';
+import { Sun, Moon, Github, Linkedin, Mail, Download, Award, Book, Briefcase, Code2, GraduationCap, ScrollText } from 'lucide-react';
 
 // Skills Section Component
 const SkillsSection = ({ isDark }) => {
@@ -66,7 +66,7 @@ const ExperienceAndProjects = ({ isDark, activeTab, setActiveTab }) => {
             onClick={() => setActiveTab('projects')}
             className={`px-4 py-2 rounded-lg ${activeTab === 'projects' ? 'bg-blue-600 text-white' : ''}`}
           >
-            <CodeSquare className="inline-block mr-2" size={20} />
+            <Code2  className="inline-block mr-2" size={20} />
             Projects
           </button>
         </div>
