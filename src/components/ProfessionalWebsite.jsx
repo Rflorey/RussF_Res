@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from "@/components/ui/button";
 import { Sun, Moon, Github, Linkedin, Mail, Download, Award, Book, Briefcase, Code2, GraduationCap, ScrollText } from 'lucide-react';
 
 const ProfessionalWebsite = () => {
@@ -8,20 +7,18 @@ const ProfessionalWebsite = () => {
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Russ Florey, P.E.</h1>
         <div className="flex justify-center gap-4 mb-8">
-          <Button 
-            variant="outline" 
+          <button 
+            className="flex items-center gap-2 px-4 py-2 border rounded-md hover:bg-gray-100"
             onClick={() => window.open('mailto:russflorey@gmail.com')}
-            className="flex items-center gap-2"
           >
             <Mail className="h-4 w-4" /> Contact Me
-          </Button>
-          <Button
-            variant="outline"
+          </button>
+          <button
+            className="flex items-center gap-2 px-4 py-2 border rounded-md hover:bg-gray-100"
             onClick={() => window.open('/resume.pdf')}
-            className="flex items-center gap-2"
           >
             <Download className="h-4 w-4" /> Download Resume
-          </Button>
+          </button>
         </div>
       </header>
 
@@ -62,24 +59,22 @@ const ProfessionalWebsite = () => {
       </section>
 
       <div className="flex justify-center gap-4 mb-8">
-        <Button
-          variant="default"
-          className="flex items-center gap-2"
+        <button
+          className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
           onClick={() => {
             // Handle experience section navigation
           }}
         >
           <GraduationCap className="h-4 w-4" /> Experience
-        </Button>
-        <Button
-          variant="default"
-          className="flex items-center gap-2"
+        </button>
+        <button
+          className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
           onClick={() => {
             // Handle projects section navigation
           }}
         >
           <Code2 className="h-4 w-4" /> Projects
-        </Button>
+        </button>
       </div>
 
       <section className="mb-12">
@@ -93,20 +88,18 @@ const ProfessionalWebsite = () => {
       </section>
 
       <footer className="flex justify-center gap-4">
-        <Button
-          variant="ghost"
-          size="icon"
+        <button
+          className="p-2 rounded-full hover:bg-gray-100"
           onClick={() => window.open('https://www.linkedin.com/in/russflorey/', '_blank')}
         >
           <Linkedin className="h-5 w-5" />
-        </Button>
-        <Button
-          variant="ghost"
-          size="icon"
+        </button>
+        <button
+          className="p-2 rounded-full hover:bg-gray-100"
           onClick={() => window.open('https://github.com/Rflorey', '_blank')}
         >
           <Github className="h-5 w-5" />
-        </Button>
+        </button>
       </footer>
     </div>
   );
