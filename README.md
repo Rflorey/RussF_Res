@@ -1,37 +1,20 @@
 # Russ Florey Professional Portfolio
 
-Modern React-based professional portfolio website showcasing skills, experience, and achievements.
+Modern React-based professional portfolio website showcasing engineering expertise and technical leadership.
 
 ## Features
 
-- Modern React components
-- Dark/light mode toggle
-- Responsive design
-- Interactive sections
-- Professional styling with Tailwind CSS
+- Modern React components with dark/light mode
+- Responsive design using Tailwind CSS
+- Interactive experience and projects sections
+- Professional skills showcase
+- Automated deployment via GitHub Pages
 
-## Local Development
+## Technologies
 
-```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-```
-
-## Technologies Used
-
-- React
+- React 18
 - Tailwind CSS
 - Vite
 - Lucide Icons
-
-## Deployment
-
-The site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
 
 Visit the live site at: https://rflorey.github.io/RussF_Res/
