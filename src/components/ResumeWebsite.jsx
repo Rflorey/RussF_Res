@@ -1,82 +1,137 @@
 import React from 'react';
-import { Mail, Github, Linkedin } from 'lucide-react';
+import { User, Phone, Mail, MapPin, Award, Book, FileText, Briefcase } from 'lucide-react';
 
 const ResumeWebsite = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <main className="container mx-auto px-4 py-8 max-w-4xl">
-        <h1 className="text-4xl font-bold text-center mb-12">Education & Certifications</h1>
-        
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {/* Master's Degree */}
-          <div className="bg-white shadow-md rounded-lg p-6">
-            <div className="flex items-start gap-4">
-              <div className="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
-                📚
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">Master of Science</h3>
-                <p className="text-gray-600">Data Science (In Progress)</p>
-                <p className="text-blue-600">Eastern University</p>
-                <p className="text-gray-500 mt-2">Expected Completion: Fall 2025</p>
-              </div>
+    <div className="min-h-screen bg-gray-50">
+      {/* Header Section */}
+      <header className="bg-blue-900 text-white py-8">
+        <div className="container mx-auto px-4">
+          <h1 className="text-4xl font-bold mb-2">RUSS FLOREY, P.E.</h1>
+          <h2 className="text-xl mb-4">SENIOR PRINCIPAL MECHANICAL STRUCTURAL ANALYSIS ENGINEER</h2>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <div className="flex items-center gap-2">
+              <Phone className="h-4 w-4" />
+              <span>832-727-4675</span>
             </div>
-          </div>
-
-          {/* Bachelor's Degree */}
-          <div className="bg-white shadow-md rounded-lg p-6">
-            <div className="flex items-start gap-4">
-              <div className="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
-                📚
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">Bachelor of Science</h3>
-                <p className="text-gray-600">Mechanical Engineering</p>
-                <p className="text-blue-600">University of Texas at Tyler</p>
-                <p className="text-gray-500 mt-2">2000</p>
-              </div>
+            <div className="flex items-center gap-2">
+              <Mail className="h-4 w-4" />
+              <span>russflorey@gmail.com</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <MapPin className="h-4 w-4" />
+              <span>Chandler, AZ</span>
             </div>
           </div>
         </div>
+      </header>
 
-        {/* Professional Certifications */}
-        <div className="bg-white shadow-md rounded-lg p-6 mb-12">
-          <h2 className="text-2xl font-bold mb-6">Professional Certifications</h2>
-          <ul className="space-y-4">
+      {/* Main Content */}
+      <main className="container mx-auto px-4 py-8">
+        {/* Professional Summary */}
+        <section className="mb-8">
+          <h3 className="text-2xl font-bold text-blue-900 mb-4">Professional Summary</h3>
+          <p className="text-gray-700 mb-4">
+            High-Achieving Mechanical Structural Analysis Engineer with demonstrated success combining traditional
+            engineering with modern computational methods for major clients and Fortune 500 companies in the heavy
+            equipment, military, oil and gas, aerospace, and renewable industries.
+          </p>
+          <ul className="list-disc list-inside space-y-2 text-gray-700">
+            <li>Body of work includes development of complex physics-based and data-driven analysis models and methods of structural, mechanical analytical algorithm development and automation.</li>
+            <li>Expertise spans static and dynamic structure analysis, FEA, modal analysis, fatigue analysis, and multibody dynamic simulations (MBD).</li>
+            <li>Currently enrolled in Eastern University's Master of Science, Data Science Program (expected completion fall 2025).</li>
+          </ul>
+        </section>
+
+        {/* Professional Experience */}
+        <section className="mb-8">
+          <h3 className="text-2xl font-bold text-blue-900 mb-4">Professional Experience</h3>
+          
+          <div className="mb-6">
+            <h4 className="text-xl font-semibold mb-2">ARRAY TECHNOLOGY</h4>
+            <p className="text-gray-600 italic mb-2">Principal Mechanical Structural Engineer (2024 - Present)</p>
+            <ul className="list-disc list-inside space-y-2 text-gray-700">
+              <li>Architected and developed AATLAS, delivering consistent analysis methodology across global engineering teams.</li>
+              <li>Created Python-based algorithms for solar tracker modal frequency calculations and wind loading analysis.</li>
+              <li>Reduced design cycle time from days to hours, increasing loading and stress assessment accuracy.</li>
+            </ul>
+          </div>
+
+          <div className="mb-6">
+            <p className="text-gray-600 italic mb-2">Senior Mechanical Engineer (2020 - 2024)</p>
+            <ul className="list-disc list-inside space-y-2 text-gray-700">
+              <li>Conducted dynamic simulation of solar tracker system subject to wind loading events.</li>
+              <li>Developed transfer functions from FEA models and innovated stress-based time series analysis.</li>
+              <li>Created comprehensive direct integration model for nonlinear transient dynamic response.</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Technical Skills */}
+        <section className="mb-8">
+          <h3 className="text-2xl font-bold text-blue-900 mb-4">Technical Skills</h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="bg-blue-50 p-2 rounded">Abaqus</div>
+            <div className="bg-blue-50 p-2 rounded">Ansys</div>
+            <div className="bg-blue-50 p-2 rounded">MSC ADAMs</div>
+            <div className="bg-blue-50 p-2 rounded">Python</div>
+            <div className="bg-blue-50 p-2 rounded">VB.NET</div>
+            <div className="bg-blue-50 p-2 rounded">Excel/VBA</div>
+            <div className="bg-blue-50 p-2 rounded">SolidWorks</div>
+            <div className="bg-blue-50 p-2 rounded">Visual Studio</div>
+          </div>
+        </section>
+
+        {/* Patents */}
+        <section className="mb-8">
+          <h3 className="text-2xl font-bold text-blue-900 mb-4">Patents</h3>
+          <ul className="space-y-2 text-gray-700">
             <li className="flex items-start gap-2">
-              <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2"></div>
-              <span>Registered Professional Engineer: Texas, Louisiana, Washington, Oregon, Alaska (Mechanical Discipline)</span>
+              <Award className="h-5 w-5 mt-1 flex-shrink-0" />
+              <span>Anti-Tracking Spear Points for Earth-Boring Drill Bits (US8579051B2)</span>
             </li>
             <li className="flex items-start gap-2">
-              <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2"></div>
-              <span>Registered Professional Engineer: Oklahoma (Mechanical & Structural Discipline)</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2"></div>
-              <span>Certificate in Machine Learning & AI Micro Boot Camp – Arizona State University (2023)</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2"></div>
-              <span>Pilot License: Airplane Single-Engine & Multi-Engine Instrument Rating</span>
+              <Award className="h-5 w-5 mt-1 flex-shrink-0" />
+              <span>Erosion-Resistant Fluid Passageways and Flow Tubes for Earth-Boring Tools (US7828089B2)</span>
             </li>
           </ul>
-        </div>
+        </section>
+
+        {/* Education & Certifications */}
+        <section className="mb-8">
+          <h3 className="text-2xl font-bold text-blue-900 mb-4">Education & Certifications</h3>
+          <div className="space-y-4">
+            <div className="flex items-start gap-2">
+              <Book className="h-5 w-5 mt-1 flex-shrink-0" />
+              <div>
+                <p className="font-semibold">Master of Science, Data Science (In Progress)</p>
+                <p className="text-gray-600">Eastern University (Expected Fall 2025)</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-2">
+              <Book className="h-5 w-5 mt-1 flex-shrink-0" />
+              <div>
+                <p className="font-semibold">Bachelor of Science, Mechanical Engineering</p>
+                <p className="text-gray-600">University of Texas at Tyler</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-2">
+              <FileText className="h-5 w-5 mt-1 flex-shrink-0" />
+              <div>
+                <p className="font-semibold">Professional Engineering Licenses</p>
+                <p className="text-gray-600">TX, LA, WA, OR, AK (Mechanical) | OK (Mechanical & Structural)</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
-      <footer className="bg-gray-900 text-white py-6">
+      {/* Footer */}
+      <footer className="bg-blue-900 text-white py-4">
         <div className="container mx-auto px-4 text-center">
-          <div className="flex justify-center space-x-6 mb-4">
-            <a href="https://www.linkedin.com" className="hover:text-blue-400 transition-colors">
-              <Linkedin className="h-6 w-6" />
-            </a>
-            <a href="https://github.com/Rflorey" className="hover:text-blue-400 transition-colors">
-              <Github className="h-6 w-6" />
-            </a>
-            <a href="mailto:russflorey@gmail.com" className="hover:text-blue-400 transition-colors">
-              <Mail className="h-6 w-6" />
-            </a>
-          </div>
-          <p className="text-sm">© 2024 Russ Florey. All rights reserved.</p>
+          <a href="https://github.com/Rflorey/Machine_Learning" className="hover:text-blue-200 transition-colors">
+            GitHub: github.com/Rflorey/Machine_Learning
+          </a>
         </div>
       </footer>
     </div>
