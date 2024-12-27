@@ -6,110 +6,86 @@ const ModernPortfolio = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Previous sections remain the same */}
 
-      {/* Experience Section */}
-      <div className="bg-white">
-        <div className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold text-center mb-12">Professional Experience</h2>
-          <div className="max-w-3xl mx-auto">
-            {/* Array Technology Principal Role */}
-            <div className="mb-12">
-              <div className="flex items-center gap-4 mb-4">
-                <h3 className="text-xl font-semibold">Principal Mechanical Structural Engineer</h3>
-                <div className="h-px flex-1 bg-gray-200"></div>
-                <span className="text-gray-500">2024 - Present</span>
-              </div>
-              <p className="text-blue-600 font-medium mb-4">Array Technology</p>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2"></span>
-                  <span>Led development of AATLAS, revolutionizing solar tracker analysis</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2"></span>
-                  <span>Automated analysis storage in Azure for ML integration</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2"></span>
-                  <span>Reduced design cycle time from days to hours</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2"></span>
-                  <span>Streamlined engineering workflow with faster iteration and better decision-making in structural design</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Array Technology Senior Role */}
-            <div className="mb-12">
-              <div className="flex items-center gap-4 mb-4">
-                <h3 className="text-xl font-semibold">Senior Mechanical Engineer</h3>
-                <div className="h-px flex-1 bg-gray-200"></div>
-                <span className="text-gray-500">2020 - 2024</span>
-              </div>
-              <p className="text-blue-600 font-medium mb-4">Array Technology</p>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2"></span>
-                  <span>Conducted dynamic simulation of solar tracker systems using MSC Adams software</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2"></span>
-                  <span>Developed Python Linear Dynamic Model using modal superposition method</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2"></span>
-                  <span>Created comprehensive direct integration models for nonlinear transient dynamic response</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Insitu Experience */}
-            <div className="mb-12">
-              <div className="flex items-center gap-4 mb-4">
-                <h3 className="text-xl font-semibold">Mechanical Engineer IV, PE</h3>
-                <div className="h-px flex-1 bg-gray-200"></div>
-                <span className="text-gray-500">2015 - 2020</span>
-              </div>
-              <p className="text-blue-600 font-medium mb-4">Insitu</p>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2"></span>
-                  <span>Analyzed UAV structural-mechanical systems using FEA and classical calculations</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2"></span>
-                  <span>Performed dynamic structural analysis of ground equipment during UAV captures</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2"></span>
-                  <span>Developed analytical tools for fatigue assessment and structural load calculation</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Gunnebo Johnson Experience */}
-            <div className="mb-12">
-              <div className="flex items-center gap-4 mb-4">
-                <h3 className="text-xl font-semibold">Product Development Engineer PE</h3>
-                <div className="h-px flex-1 bg-gray-200"></div>
-                <span className="text-gray-500">2014 - 2015</span>
-              </div>
-              <p className="text-blue-600 font-medium mb-4">Gunnebo Johnson</p>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2"></span>
-                  <span>Led redesign of submersible gear housing for Army Corps of Engineers</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2"></span>
-                  <span>Developed first line of well service tubing blocks from concept to production</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2"></span>
-                  <span>Ensured 100% compliance with industry standards and ASME design codes</span>
-                </li>
-              </ul>
-            </div>
+      {/* Education Section */}
+      <div className="container mx-auto px-4 py-16">
+        <h2 className="text-3xl font-bold text-center mb-12">Education & Certifications</h2>
+        <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-8">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <Book className="text-blue-600 h-6 w-6 mb-4" />
+            <h3 className="text-lg font-semibold mb-2">Master of Science</h3>
+            <p className="text-gray-600">Data Science (In Progress)</p>
+            <p className="text-blue-600">Eastern University</p>
+            <p className="text-gray-500 text-sm mt-2">Expected Completion: Fall 2025</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <Book className="text-blue-600 h-6 w-6 mb-4" />
+            <h3 className="text-lg font-semibold mb-2">Bachelor of Science</h3>
+            <p className="text-gray-600">Mechanical Engineering</p>
+            <p className="text-blue-600">University of Texas at Tyler</p>
+            <p className="text-gray-500 text-sm mt-2">2000</p>
+          </div>
+        </div>
+        
+        {/* Certifications */}
+        <div className="max-w-3xl mx-auto mt-8">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-lg font-semibold mb-4">Professional Certifications</h3>
+            <ul className="space-y-3 text-gray-600">
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2"></span>
+                <span>Registered Professional Engineer: Texas, Louisiana, Washington, Oregon, Alaska (Mechanical Discipline)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2"></span>
+                <span>Registered Professional Engineer: Oklahoma (Mechanical & Structural Discipline)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2"></span>
+                <span>Certificate in Machine Learning & AI Micro Boot Camp – Arizona State University (2023)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2"></span>
+                <span>Pilot License: Airplane Single-Engine & Multi-Engine Instrument Rating</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+
+      {/* Footer with Social Links */}
+      <footer className="bg-gray-900 text-white py-8">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col items-center gap-4">
+            <div className="flex justify-center gap-6">
+              <a
+                href="https://www.linkedin.com/in/russflorey/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 transition"
+              >
+                <Linkedin className="h-6 w-6" />
+              </a>
+              <a
+                href="https://github.com/Rflorey"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 transition"
+              >
+                <Github className="h-6 w-6" />
+              </a>
+              <a
+                href="mailto:russflorey@gmail.com"
+                className="hover:text-blue-400 transition"
+              >
+                <Mail className="h-6 w-6" />
+              </a>
+            </div>
+            <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} Russ Florey. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default ModernPortfolio;
