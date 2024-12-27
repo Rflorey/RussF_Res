@@ -47,7 +47,7 @@ const ResumeWebsite = () => {
         <section className="mb-8">
           <h3 className="text-2xl font-bold text-blue-900 mb-4">Professional Experience</h3>
           
-          <div className="mb-6">
+          <div className="mb-8">
             <h4 className="text-xl font-semibold mb-2">ARRAY TECHNOLOGY</h4>
             <p className="text-gray-600 italic mb-2">Principal Mechanical Structural Engineer (2024 - Present)</p>
             <ul className="list-disc list-inside space-y-2 text-gray-700">
@@ -55,14 +55,24 @@ const ResumeWebsite = () => {
               <li>Created Python-based algorithms for solar tracker modal frequency calculations and wind loading analysis.</li>
               <li>Reduced design cycle time from days to hours, increasing loading and stress assessment accuracy.</li>
             </ul>
-          </div>
 
-          <div className="mb-6">
-            <p className="text-gray-600 italic mb-2">Senior Mechanical Engineer (2020 - 2024)</p>
+            <p className="text-gray-600 italic mb-2 mt-4">Senior Mechanical Engineer (2020 - 2024)</p>
             <ul className="list-disc list-inside space-y-2 text-gray-700">
               <li>Conducted dynamic simulation of solar tracker system subject to wind loading events.</li>
               <li>Developed transfer functions from FEA models and innovated stress-based time series analysis.</li>
               <li>Created comprehensive direct integration model for nonlinear transient dynamic response.</li>
+            </ul>
+          </div>
+
+          <div className="mb-8">
+            <h4 className="text-xl font-semibold mb-2">INSITU</h4>
+            <p className="text-gray-600 italic mb-2">Mechanical Engineer IV, PE (2015 - 2020)</p>
+            <ul className="list-disc list-inside space-y-2 text-gray-700">
+              <li>Analyzed mechanical and welded/bolted structural equipment for next-generation unmanned air vehicle (UAV) retrieval systems using finite element analysis Ansys and Abaqus.</li>
+              <li>Performed nonlinear structural analysis and dynamic capture simulation of UAV aircraft while conducting tests and classical engineering calculations.</li>
+              <li>Engaged in analysis of metallic structures and injection molded plastics including evaluation of stress, strain, fatigue life, buckling, modal, and rigid body dynamics.</li>
+              <li>Resolved critical weldment issues in government-controlled UAV recovery system, ensuring compliance with NAVAIR and DCMA requirements.</li>
+              <li>Generated engineering reports and developed analytical tools for fatigue assessment, structural load calculation, and UAV capture simulation.</li>
             </ul>
           </div>
         </section>
